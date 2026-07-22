@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>86 the Basilisk — playtest</title>
+<style>
+  :root {
+    --stockpot: #1c221d;
+    --card: #242b25;
+    --cream: #f2ead2;
+    --brass: #c9a24b;
+    --fire: #d4543b;
+    --basilisk: #8fbf71;
+    --gray: #8fa091;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--stockpot);
+    color: var(--cream);
+    font-family: Georgia, 'Times New Roman', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+  }
+  .mark { width: 128px; height: 128px; margin: 0 auto 12px; }
+  h1 { font-size: 2.1rem; font-weight: 700; letter-spacing: 0.5px; }
+  h1 .num { color: var(--fire); }
+  .tagline { color: var(--gray); margin: 10px 0 26px; font-style: italic; line-height: 1.5; }
+  .btn {
+    display: block;
+    margin: 12px auto;
+    max-width: 380px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  .btn-play { background: var(--brass); color: #221c10; }
+  .btn-play:hover { filter: brightness(1.08); }
+  .btn-apk { background: var(--card); color: var(--cream); border: 1px solid var(--brass); }
+  .btn-apk:hover { background: #2b332c; }
+  .note {
+    margin-top: 26px;
+    padding: 14px 18px;
+    background: var(--card);
+    border-radius: 10px;
+    color: var(--gray);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    text-align: left;
+  }
+  .note b { color: var(--cream); }
+  .foot { margin-top: 18px; color: #5f6f61; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <svg class="mark" viewBox="0 0 128 128" aria-label="A basilisk wearing a chef's toque">
+      <rect width="128" height="128" rx="24" fill="#1c221d"/>
+      <path d="M16 106 Q36 119 58 108 Q80 98 100 108" stroke="#4a6b3f" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <path d="M22 92 Q44 104 68 95 Q90 87 106 95" stroke="#5f8c4a" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M102 92 Q115 80 108 68 Q102 58 88 57" stroke="#7fae6a" stroke-width="15" fill="none" stroke-linecap="round"/>
+      <ellipse cx="72" cy="57" rx="23" ry="14" fill="#8fbf71"/>
+      <path d="M49 57 q-8 -1 -13 -3 M36 54 l-7 -4 M36 54 l-6 5" stroke="#d4543b" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="74" cy="55" r="6.5" fill="#e8d44a"/>
+      <ellipse cx="74" cy="55" rx="2" ry="5.2" fill="#1b241c"/>
+      <path d="M58 46 V17 Q57 5 66 6 Q69 0 78 2 Q88 0 90 7 Q99 6 98 18 V46 z" fill="#f2ead2"/>
+      <path d="M70 13 V43 M85 12 V43" stroke="#ddd2b8" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="55" y="44" width="46" height="8" rx="4" fill="#ddd2b8"/>
+    </svg>
+    <h1><span class="num">86</span> the Basilisk</h1>
+    <p class="tagline">Run a dungeon-to-table restaurant. Send expendable adventurers into the larder,
+    cook what survives, and one day serve the beast the house is named for.</p>
+
+    <a class="btn btn-play" href="play/">▶&nbsp; Play in your browser</a>
+    <a class="btn btn-apk" href="86-the-basilisk.apk" download>Download for Android (.apk)</a>
+
+    <div class="note">
+      <b>This is a friends-and-family playtest.</b> Everything is subject to change and
+      your save may not survive updates. Tell me everything: what confused you, what
+      bored you, where you got stuck, and the funniest way anyone on your crew died.
+      <br><br>
+      <b>Android install:</b> your phone will warn about installing from outside the
+      Play Store — that's expected for a playtest build. Tap the APK, allow the
+      install, and you're cooking.
+    </div>
+    <p class="foot">86 the Basilisk — playtest build · updated whenever the kitchen ships</p>
+  </main>
+</body>
+</html>
